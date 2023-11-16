@@ -63,7 +63,8 @@ function App() {
 
   // initial load
   useEffect(() => {
-    const loadUrl = new URLSearchParams(location.search).get("url");
+    const loadUrl =
+      "https://pub-d4ea0581a1e14ecf89f113dbf22d7dcb.r2.dev/flowlines/flowlines.pmtiles";
     if (loadUrl) {
       let initialValue = new PMTiles(loadUrl);
       setFile(initialValue);
@@ -109,7 +110,10 @@ function App() {
           PMTiles Viewer
         </Title>
         <GithubLink>
-          <GithubA href="https://github.com/protomaps/PMTiles" target="_blank">
+          <GithubA
+            href="https://github.com/Upstream-Tech/PMTiles"
+            target="_blank"
+          >
             <GitHubLogoIcon /> {GIT_SHA}
           </GithubA>
         </GithubLink>
